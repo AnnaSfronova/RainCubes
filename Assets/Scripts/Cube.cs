@@ -24,7 +24,7 @@ public class Cube : MonoBehaviour
         if (_isPlatformTouched)
             return;
 
-        if (collision.gameObject.TryGetComponent<Platform>(out Platform platform) == false)
+        if (collision.gameObject.TryGetComponent(out Platform platform) == false)
             return;
 
         _isPlatformTouched = true;
